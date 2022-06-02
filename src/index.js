@@ -14,13 +14,7 @@ console.log(fxrand()); // deterministic PRNG function, use it instead of Math.ra
 // More about it in the guide, section features:
 // [https://fxhash.xyz/articles/guide-mint-generative-token#features]
 //
-window.$fxhashFeatures = {
-    "Number of colors": numColors,
-    "Black Dots": addBlack,
-    "White Dots": addWhite,
-    Inverted: inverted,
-    Grayscale: grayscale,
-};
+
 console.table(window.$fxhashFeatures);
 // this code writes the values to the DOM as an example
 const container = document.createElement("div");

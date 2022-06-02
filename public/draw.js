@@ -29,7 +29,9 @@ function setup() {
 
     col = randomRGB();
     bg = randomGrayscale();
+    strk = randomRGB();
     sizee = int(randInt(width / 64, width / 2));
+    strkwt = randInt(sizee / 100, sizee / 2);
 
     // FX Features
     window.$fxhashFeatures = {
@@ -41,7 +43,8 @@ function setup() {
 function draw() {
     background(bg);
 
-    stroke(0);
+    stroke(strk);
+    strokeWeight(strkwt);
     fill(col);
 
     rectMode(CENTER);
