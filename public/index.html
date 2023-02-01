@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Skllzrmy.tez P5 fxhash Boilerplate</title>
+        <title>GPT Cityscapes</title>
         <meta charset="utf-8" />
         <script id="fxhash-snippet">
             //---- do not edit the following code (you can indent as you wish)
@@ -51,5 +51,48 @@
     </head>
     <body>
         <!-- WEBPACK will inject the bundle.js here -->
+        <div id="legend-button" class="legend-button"><a href="#" class="hamburger-icon legend-button"></a> MENU</div>
+
+        <div id="legend" class="">
+            <div id="legend-close">X</div>
+            <div class="legend-wrapper">
+                <h1>GPT Cityscapes</h1>
+                <span class="legend-hash-header">Hash</span>
+                <span id="insert-prop-hash"></span>
+                <table id="legend-properties">
+                    <thead>
+                        <td>Property</td>
+                        <td>Value</td>
+                    </thead>
+                    <tr>
+                        <td>Buildings</td>
+                        <td id="insert-prop-numBuildings"></td>
+                    </tr>
+                    <tr>
+                        <td>Moon Diameter</td>
+                        <td id="insert-prop-moonDiameter"></td>
+                    </tr>
+                    <tr>
+                        <td>Moon Speed</td>
+                        <td id="insert-prop-moonSpeed"></td>
+                    </tr>
+                </table>
+
+                <ul id="legend-list">
+                    <li class="legend-item">
+                        <span class="legend-description">Type (or click) the letters below</span>
+                    </li>
+                    <li class="legend-item">
+                        <span class="legend-key" onclick="save('GPT_Cityscape.png')">S</span>
+                        <span class="legend-description">Save as PNG (be patient)</span>
+                    </li>
+                    <li class="legend-item">
+                        <span class="legend-key" onclick="playPause();">P</span>
+                        <span class="legend-description">Play / Pause</span>
+                    </li>
+                </ul>
+            </div>
+            <span class="createdby">created by skllzrmy.tez with ❤️</span>
+        </div>
     </body>
 </html>
