@@ -23,19 +23,3 @@ container.innerText = `
   some pseudo random values: [ ${fxrand()}, ${fxrand()}, ${fxrand()}, ${fxrand()}, ${fxrand()},... ]\n
 `;
 // document.body.prepend(container)
-// document.body.prepend(container)
-document.addEventListener(
-    "click",
-    function (event) {
-        // If the clicked element doesn't have the right selectors, return
-        if (!event.target.matches(".legend-button") && !event.target.matches("#legend-close")) return;
-        if (event.target.matches(".legend-button")) {
-            document.getElementById("legend").classList.add("open");
-            document.getElementById("legend-button").classList.add("hide");
-        } else if (event.target.matches("#legend-close")) {
-            document.getElementById("legend-button").classList.remove("hide");
-            document.getElementById("legend").classList.remove("open");
-        }
-    },
-    false
-);
